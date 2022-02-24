@@ -4,25 +4,63 @@
         <title>Portfolio</title>
         <link rel="stylesheet" href="styles.css">
         <style>
-            #navBar
-            {
-                height: 100px;
+            body {
+                margin: 0;
+            }
+            #navBar {
+                height: 80px;
                 background-color: lightgray;
             }
 
-            li
-            {
+            #navBar ul, li, img{
                 display: inline-block;
+            }
+
+            #navBar ul{
+                vertical-align: top;
+            }
+
+            #navBar li {
+                padding-right: 20px;
+            }
+
+            #navBar a {
+                text-decoration: none;
+                color: black;
+                font-size: 24px;
+            }
+
+            #navBar a:hover {
+                cursor: pointer;
+                color: blueviolet;
             }
 
             .sektion
             {
                 height: 600px;
             }
+
+            #logo{
+                height: 100%;
+                margin-left: 25px;
+            }
+
+            #home img {
+                float: right;
+                height: 100%;
+            }
+
+            #home {
+                height: 200px;
+            }
         </style>
     </head>
     <body>
         <nav id="navBar">
+            <img src="images/linux.png" alt="" id="logo" >
+            <div style="height: 100%; width: 100px; background-color: red; display: inline-block;">
+
+            </div>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#aboutMe">About Me</a></li>
@@ -33,7 +71,9 @@
         </nav>
         
         <section class="sektion" id="home">
-            <img style="height: 200px;" src="images/chad.jpg" alt="an image is supposed to be here">
+            <h1>Something about me</h1>
+            <p>Idk man this is too much text for me to dskf;nd</p>
+            <img src="images/chad.jpg" alt="an image is supposed to be here">
         </section>
             
         <section class="sektion" id="aboutMe">
