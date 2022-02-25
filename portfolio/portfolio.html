@@ -7,86 +7,122 @@
             body {
                 margin: 0;
             }
-            #navBar {
-                height: 80px;
-                background-color: lightgray;
-            }
-
-            #navBar ul, li, img{
-                display: inline-block;
-            }
-
-            #navBar ul{
-                vertical-align: top;
-            }
-
-            #navBar li {
-                padding-right: 20px;
-            }
-
-            #navBar a {
-                text-decoration: none;
-                color: black;
-                font-size: 24px;
-            }
-
-            #navBar a:hover {
-                cursor: pointer;
-                color: blueviolet;
-            }
 
             .sektion
             {
                 height: 600px;
             }
 
-            #logo{
-                height: 100%;
-                margin-left: 25px;
+            .left {
+                float: left;
             }
 
-            #home img {
+            .right {
                 float: right;
-                height: 100%;
+            }
+
+            nav {
+                height: 56px;
+                background-color: rgb(48, 48, 48);
+            }
+
+            nav a {
+                text-decoration: none;
+                color: lightgray;
+                font-size: 16pt;
+            }
+
+            nav a:hover {
+                cursor: pointer;
+                color: white;
+            }
+
+            nav > div {
+                height: inherit;
+                float: left;
+                vertical-align: middle;
+            }
+
+            nav > div > div {
+                margin-right: 1rem;
+                margin-left: 1rem;
+                margin-top: 1rem;
+            }
+            
+            #navLogoImg{
+                height: 75%;
+                margin: auto;
+            }
+
+            #navImgContainer {
+                height: inherit;
+                margin: 0;
+                margin-right: 25px;
+                padding: 12.5%;
             }
 
             #home {
-                height: 200px;
+                display: flex;
             }
         </style>
     </head>
     <body>
-        <nav id="navBar">
-            <img src="images/linux.png" alt="" id="logo" >
-            <div style="height: 100%; width: 100px; background-color: red; display: inline-block;">
-
+        <nav>
+            <div>
+                <div id="navImgContainer">
+                    <a href="#home">
+                        <img src="images/linux.png" alt="" id="navLogoImg">
+                    </a>
+                </div>
             </div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#aboutMe">About Me</a></li>
-                <li><a href="#projects">My Projects</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-                <li><a href="#email">Email Me</a></li>
-            </ul>
+            <div>
+                <div>
+                    <a href="#home">Home</a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <a href="#aboutMe">About Me</a>
+                </div>   
+            </div>
+            <div>
+                <div>
+                    <a href="#projects">My Projects</a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <a href="#contact">Contact Me</a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <a href="#email">Email Me</a>
+                </div>
+            </div>
         </nav>
         
-        <section class="sektion" id="home">
-            <h1>Something about me</h1>
-            <p>Idk man this is too much text for me to dskf;nd</p>
-            <img src="images/chad.jpg" alt="an image is supposed to be here">
+        <section id="home">
+            <div style="padding-left: 50px; padding-top: 50px; width: 60%; height: inherit">
+                <h1>Something about me</h1>
+                <p>Chad</p>
+            </div>
+            <div style="width: 40%;">
+                <img style="width: 100%;" src="images/chad.jpg" alt="an image is supposed to be here">
+            </div>
         </section>
             
         <section class="sektion" id="aboutMe">
-            <h1>Hey I am WinterR</h1>
-            <p>Hi I am the guy you call when something doesn't work</p>
+            <h1>Hi my name is Ramiz aka WinterR</h1>
+            <p>I am the guy you call when something needs fixing</p>
             <h1>Let's work together</h1>
         </section>
         
-        <section class="sektion" id="projects">
+        <section style="height: 300px;" id="projects">
             <h3>You can check out my projects on Github bellow!</h3>
         </section>
         
-        <section class="sektion" id="contact">
+        <section id="contact">
             <p><b>You can contact me on:<a></p>
 
             <a href="https://github.com/W1nt3rR" target="_blank">
@@ -111,9 +147,9 @@
 
         </section>
 
-        <section class="sektion" id="email">
+        <section id="email">
             <h3>Send me an Email:</h3>
-            <form action="">
+            <!--form action="">
                 <label for="email">Email:</label>
                 <input type="email" name="email" id="email" required>
                 <br>
@@ -132,6 +168,27 @@
                 <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
                 <br>
                 <input type="submit" name="" id="">
+            </form-->
+
+            <form action="">
+                <table>
+                    <tr>
+                        <td> <label for="">Email:</label> </td>
+                        <td> <input type="email"> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="">Subject:</label> </td>
+                        <td> <input type="text"> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="">Text:</label> </td>
+                        <td> <textarea name="" id="" cols="20" rows="4"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> <input type="submit"> </td>
+                    </tr>
+                </table>
             </form>
         </section>
     </body>
