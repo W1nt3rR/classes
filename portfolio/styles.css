@@ -2,12 +2,12 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(96, 96, 96);
-    color: lightgray;
+    color: white;
 }
 
 .sektion
 {
-    height: 600px;
+    height: 400px;
 }
 
 .left {
@@ -21,6 +21,7 @@ body {
 nav {
     height: 56px;
     background-color: rgb(48, 48, 48);
+    color: lightgray;
 }
 
 nav a {
@@ -36,7 +37,7 @@ nav a:hover {
 }
 
 nav > div {
-    height: inherit;
+    height: 100%;
     float: left;
     vertical-align: middle;
 }
@@ -53,7 +54,7 @@ nav > div > div {
 }
 
 #navImgContainer {
-    height: inherit;
+    height: 100%;
     margin: 0;
     margin-right: 25px;
     padding: 12.5%;
@@ -61,19 +62,96 @@ nav > div > div {
 
 #home {
     display: flex;
+    height: 500px;
+}
+
+#home img {
+    height: 100%;
+    float: right;
+}
+
+#home #div1 {
+    padding: 96px;
+    font-size: 32px;
+    width: 60%; 
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#home #div2 {
+    width: 40%;
+    padding: 48px;
+    box-sizing: border-box;
 }
 
 #projects {
 }
 
 #projects > div > div {
-    border: 2px solid black;
-    width: 35%;
-    height: 150px;
-    margin: 4vw;
+    width: 50%;
+    height: 250px;
     display: inline-block;
+    padding: 25px;
+    box-sizing: border-box;
 }
 
 #projects > div {
+    width: 100%;
+    font-size: 0;
+}
+
+.projectImg {
+    height: 100%; 
+    width: 16%;
+    padding: 20px;
+    display: inline-block;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.projectImg img{
+    display: table;
+}
+
+.projectText {
+    font-size: 16px;
+    color: black;
+    height: 100%; 
+    width: 84%;
+    padding: 40px;
+    display: inline-block;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.projectText p {
+    display: table;
+    margin: 5px;
+}
+
+.projectText h1 {
+    display: table;
+    margin: 5px;
+}
+
+#aboutMe {
+    text-align: center;
+    height: 600px;
+    font-size: 32px;
+}
+
+#contact {
+    height: 200px;
+}
+
+#contact div {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+#contact img {
     width: 100%;
 }
