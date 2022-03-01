@@ -1,0 +1,24 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    width: 10%;
+    height: 400px;
+    background-color: rgb(44, 36, 36);
+    position: absolute;
+    border: 2px solid black;
+    top: 25px;
+    left: ;
+    right: ;
+    bottom: ;
+}
+
+#first {
+
+}
+
+#second {
+
+}
