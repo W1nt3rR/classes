@@ -1,3 +1,3 @@
 # classes
 
-My first git repo 
+Lessons from Centar NIT and Portfolio page 
