@@ -8,49 +8,17 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <nav>
-            <div>
-                <div id="navImgContainer">
-                    <a href="#home">
-                        <!--img src="images/linux.png" alt="" id="navLogoImg"-->
-                    </a>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <a href="#home">Home</a>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <a href="#aboutMe">About Me</a>
-                </div>   
-            </div>
-            <div>
-                <div>
-                    <a href="#projects">My Projects</a>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <a href="#contact">Contact Me</a>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <a href="#email">Email Me</a>
-                </div>
-            </div>
-        </nav>
-        
         <section id="home">
             <div id="div1">
-                <h1>Something about me</h1>
-                <p>Chad</p>
+                <h1>I'm Ramiz Sabovic aka WinterR</h1>
+                <p>I'm also the guy you call when something is broken</p>
             </div>
+
             <div id="div2">
                 <img src="images/chad.webp" alt="an image is supposed to be here">
             </div>
+
+            <img src="images/Arrow-down.svg" alt="">
         </section>
             
         <section id="aboutMe">
@@ -69,7 +37,9 @@
                         <img style="width: 100%;" src="images/logos/github.png" alt="">
                     </div>
                     <div class="projectText">
-                        <p>This is my first project ever</p>
+                        <h1>Centar NIT Classes</h1>
+                        <p>My Learning adventure and Development of my HTML/CSS Skills</p>
+                        <p><a href="https://github.com/W1nt3rR/classes">Check It Out Here!</a></p>
                     </div>
                 </div>
                 <div>
@@ -77,13 +47,20 @@
                         <img style="width: 100%;" src="images/logos/github.png" alt="">
                     </div>
                     <div class="projectText">
-                        <h1>This is my second Project</h1>
-                        <p>Here is the link</p>
+                        <h1>Android Deice Tree Maintenance</h1>
+                        <p>I used to build android ROMs back in the day</p>
+                        <p><a href="https://github.com/W1nt3rR/android_device_samsung_j7xelte">Check It Out Here!</a></p>
                     </div>
                 </div>
                 <div>
-                    <div class="projectImg"></div>
-                    <div class="projectText"></div>
+                    <div class="projectImg">
+                        <img style="width: 100%;" src="images/logos/github.png" alt="">
+                    </div>
+                    <div class="projectText">
+                        <h1>C# and .NET Development</h1>
+                        <p>Follow my development of C# and Object Oriented Programming!</p>
+                        <p><a href="https://github.com/W1nt3rR/OOP2-2022">Check It Out Here!</a></p>
+                    </div>
                 </div>
                 <div>
                     <div class="projectImg"></div>
@@ -101,55 +78,40 @@
             
         </section>
         
-        <section id="contact">
+        <!-- <section id="contact">
             
-        </section>
+        </section> -->
 
         <section id="email">
-            <h3>Send me an Email:</h3>
-            <!--form action="">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required>
-                <br>
-                <label for="title">Title</label>
-                <input type="text" name="title" id="title" required>
-                <br>
-                <label for="select">Letter</label>
-                <select name="select" id="select">
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                </select>
-                <br>
-                <label for="textarea">Text</label>
-                <br>
-                <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
-                <br>
-                <input type="submit" name="" id="">
-            </form-->
-
-            <form action="">
-                <table>
-                    <tr>
-                        <td> <label for="">Email:</label> </td>
-                        <td> <input type="email"> </td>
-                    </tr>
-                    <tr>
-                        <td> <label for="">Subject:</label> </td>
-                        <td> <input type="text"> </td>
-                    </tr>
-                    <tr>
-                        <td> <label for="">Text:</label> </td>
-                        <td> <textarea name="" id="" cols="20" rows="4"></textarea></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td> <input type="submit"> </td>
-                    </tr>
-                </table>
-            </form>
+            <div>
+                <h2>Feel free to send me an Email:</h2>
+                <form action="">
+                    <table>
+                        <tr>
+                            <td> <label for="">Email:</label> </td>
+                            <td> <input class="emailElement" type="email"> </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="">Subject:</label> </td>
+                            <td> <input class="emailElement" type="text"> </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="">Text:</label> </td>
+                            <td> <textarea class="emailText" name="" id="" cols="30" rows="4"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td> <input class="emailElement" type="submit" value="Send"> </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
         </section>
+
         <section id="footer">
+
+            <div class="filler"></div>
+
             <div>
                 <a href="https://github.com/W1nt3rR" target="_blank">
                     <img src="images/logos/github.png" alt="">
@@ -180,5 +142,21 @@
                 </a>
             </div>
         </section>
+
+        <nav>
+            <a href="#home">
+                <img src="images/snowflake.svg" alt="logo">
+            </a>
+
+            <a href="#home">Home</a>
+            <a href="#aboutMe">About Me</a>
+            <a href="#projects">My Projects</a>
+            <a href="#contact">Contact Me</a>
+            <a href="#email">Email Me</a>
+
+            <div class="filler"></div>
+
+            <a href="#email">Test</a>
+        </nav>
     </body>
 </html>
