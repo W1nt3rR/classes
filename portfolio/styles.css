@@ -5,6 +5,11 @@ body {
     color: white;
 }
 
+#content {
+    width: 80%;
+    margin: auto;
+}
+
 #backgroundImg {
     position: fixed;
     bottom: 32px;
@@ -56,10 +61,11 @@ nav img{
     display: flex;
     align-items: center;
     height: 100vh;
+    box-sizing: border-box;
 }
 
 #home #div1 {
-    padding: 10%;
+    padding: 5%;
     font-size: 20pt;
     width: 60%; 
     box-sizing: border-box;
@@ -91,6 +97,7 @@ nav img{
 
 #projects {
     padding-top: 48px;
+    box-sizing: border-box;
 }
 
 #projects > div > div {
@@ -110,7 +117,7 @@ nav img{
     height: 100%; 
     width: 16%;
     padding: 20px;
-    background-color: white;
+    background-color: rgb(28, 24, 24);
     box-sizing: border-box;
     float: left;
 }
@@ -121,13 +128,18 @@ nav img{
     height: 100%; 
     width: 84%;
     padding: 32px;
-    background-color: white;
+    background-color: rgb(28, 24, 24);
     box-sizing: border-box;
     float: right;
 }
 
-.projectText p, h1{
+.projectText p, h1, a{
     margin: 5px;
+    color: lightgray;
+}
+
+.projectTexet a:hover{
+    color: white;
 }
 
 /* .projectText h1 {
@@ -139,14 +151,20 @@ nav img{
     text-align: left;
     height: 100vh;
     font-size: 24px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 #aboutMe div {
-    padding: 64px;
+    padding-top: 64px;
+    padding: 48px;
 }
 
 #contact {
     height: 100vh;
+    padding-top: 48px;
+    box-sizing: border-box;
 }
 
 #contact > div {
@@ -167,13 +185,15 @@ nav img{
     height: 100vh;
     align-items: center;
     display: flex;
+    padding-top: 48px;
+    box-sizing: border-box;
 }
 
 #email div {
     margin: auto;
     display: inline-block;
     padding: 48px;
-    border: 2px solid white;
+    border: 2px solid lightgray;
 }
 
 .emailElement {
