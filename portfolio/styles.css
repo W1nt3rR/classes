@@ -5,6 +5,14 @@ body {
     color: white;
 }
 
+#backgroundImg {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    opacity: 0.5%;
+    width: 40vh;
+}
+
 .filler {
     flex-grow: 1;
 }
@@ -51,8 +59,8 @@ nav img{
 }
 
 #home #div1 {
-    padding: 8%;
-    font-size: 18pt;
+    padding: 10%;
+    font-size: 20pt;
     width: 60%; 
     box-sizing: border-box;
 }
@@ -78,7 +86,7 @@ nav img{
     position: absolute;
     left: 50vw;
     top: 90vh;
-    opacity: 75%;
+    opacity: 95%;
 }
 
 #projects {
@@ -128,13 +136,30 @@ nav img{
 
 #aboutMe {
     padding-top: 48px;
-    text-align: center;
+    text-align: left;
     height: 100vh;
-    font-size: 32px;
+    font-size: 24px;
+}
+
+#aboutMe div {
+    padding: 64px;
 }
 
 #contact {
-    height: 200px;
+    height: 100vh;
+}
+
+#contact > div {
+    text-align: center;
+    padding: 128px;
+}
+
+#contact > div > div {
+    display: inline-block;
+}
+
+#contact img {
+    width: 64px;
 }
 
 #email{
