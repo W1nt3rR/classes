@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+
+#container {
+    height: 100vh;
+    background-color: blueviolet;
+    display: inline-block;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+#textContainer {
+    margin-top: 50vh;
+    width: 60%;
+    float: left;
+}
+
+#btnContainer {
+    margin-top: 50vh;
+    width: 40%;
+    float: right;
+}
+
+@media screen and (max-width: 600px){
+    #container {
+        display: block;
+    }
+
+    #textContainer {
+        width: auto;
+        margin: 0;
+    }
+
+    #btnContainer
+    {
+        width: auto;
+        margin: 0;
+    }
+}
