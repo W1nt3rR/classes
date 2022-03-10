@@ -41,7 +41,7 @@
     margin: auto;
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 750px) {
     .block {
         display: block;
         width: 100%;
