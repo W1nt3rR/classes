@@ -102,8 +102,41 @@ nav img{
 #projects {
     padding-top: 48px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
+#projects > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#projects > div > div{
+    width: 45%;
+    /* background-color: white; */
+    margin: 20px;
+    display: flex;
+    /* height: 240px; */
+}
+
+.projectImg { 
+    width: 20%;
+    padding: 16px;
+    background-color: rgb(28, 24, 24);
+    box-sizing: border-box;
+}
+
+.projectText {
+    font-size: 16px;
+    /* height: 100%; */
+    padding: 32px;
+    background-color: rgb(28, 24, 24);
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+/*
 #projects > div > div {
     width: 50%;
     height: 240px;
@@ -135,14 +168,14 @@ nav img{
     background-color: rgb(28, 24, 24);
     box-sizing: border-box;
     float: right;
-}
+} */
 
 .projectText p, h1, a{
     margin: 5px;
     color: lightgray;
 }
 
-.projectTexet a:hover{
+.projectText a:hover{
     color: white;
 }
 
