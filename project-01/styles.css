@@ -10,7 +10,7 @@ body {
 }
 
 #content {
-    width: 100%;
+    width: 90%;
     margin: auto;
 }
 
@@ -26,7 +26,7 @@ nav {
 
 nav > div {
     margin: auto;
-    width: 85%;
+    width: 80%;
     align-items: center;
     display: flex;
 }
@@ -72,6 +72,7 @@ nav select {
 #home {
     background: linear-gradient(rgba(255, 255, 2555, .9), rgba(255, 255, 2555, .9)), url(images/hero-bg.jpg);
     /* overflow: hidden; */
+    padding: 0;
 }
 
 section {
