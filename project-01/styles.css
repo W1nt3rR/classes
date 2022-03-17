@@ -10,7 +10,7 @@ body {
 }
 
 #content {
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 
@@ -70,7 +70,7 @@ nav select {
 }
 
 #home {
-    background: linear-gradient(rgba(255, 255, 2555, .9), rgba(255, 255, 2555, .9)), url(images/hero-bg.jpg);
+    background: linear-gradient(rgba(255, 255, 2555, .8), rgba(255, 255, 2555, .8)), url(images/hero-bg.jpg);
     /* overflow: hidden; */
     padding: 0;
 }
@@ -121,7 +121,7 @@ section {
 #blocks {
     display: flex;
     justify-content: center;
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 
@@ -131,7 +131,7 @@ section {
     flex-grow: 1;
     /* height: 36vh; */
     box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.05);
-    margin: 0px 24px;
+    margin: 0px 20px;
     background-color: white;
     transition: 0.5s;
     box-sizing: border-box;
