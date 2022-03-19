@@ -1,0 +1,130 @@
+#bounce {
+    /* animation-name: bounce, blink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; */
+    animation: bounce1 2s infinite, blink 1s infinite;
+    width: 0px;
+    height: 0px;
+    background-color: blueviolet;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#transformation {
+    animation: transform 2s infinite;
+    font-size: 24pt;
+}
+
+@keyframes transform{
+    0% {
+        /* transform: translateX(0%); */
+    }
+
+    50% {
+        /* transform: translateX(25vw);
+        color: blue; */
+        transform: rotate(360deg);
+    }
+
+    100% {
+
+    }
+}
+
+/* #heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    margin-top: 10px;
+    animation: heartPulse 2s infinite;
+  }
+
+  #heart::before, #heart::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 52px;
+    height: 80px;
+    border-radius: 50px 50px 0 0;
+    background: red;
+  }
+  
+  #heart::before {
+    left: 50px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+  
+  #heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  } */
+
+@keyframes heartPulse {
+    0% {
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scale(1.75);
+    }
+
+    30% {
+        transform: scale(1);
+    }
+
+    40% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes bounce1 {
+    0% {
+        /* top: 0; */
+        /* transform: rotate(90deg); */
+        /* width: 100px;
+        height: 100px; */
+    }
+
+    50% {
+        /* top: 200px; */
+        /* transform: rotate(360deg); */
+        /* border-radius: 50%; */
+        width: 100vw;
+        height: 100vh;
+    }
+
+    100% {
+        /* top: 0; */
+        /* width: 100px;
+        height: 100px; */
+    }
+}
+
+
