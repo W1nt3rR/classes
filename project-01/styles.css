@@ -22,6 +22,7 @@ nav {
     top: 0;
     background-color: white;
     /* color: rgb(112, 255, 255); */
+    color: #16507b;
 }
 
 nav > div {
@@ -40,13 +41,17 @@ nav p {
 nav a {
     margin-right: 32px;
     text-decoration: none;
-    color: black;
+    color: #16507b;
+}
+
+nav a:hover {
+    color: #2487ce;
 }
 
 nav button {
     width: 128px;
     height: 40px;
-    background-color: rgb(36, 180, 224);
+    background-color: #2487ce;
     border: none;
     border-radius: 4px;
     font-size: 12pt;
@@ -54,7 +59,7 @@ nav button {
 }
 
 nav button:hover {
-    background-color: rgb(44, 188, 232);
+    background-color: #2690db;
     cursor: pointer;
 }
 
@@ -73,10 +78,12 @@ nav select {
     background: linear-gradient(rgba(255, 255, 2555, .8), rgba(255, 255, 2555, .8)), url(images/hero-bg.jpg);
     /* overflow: hidden; */
     padding: 0;
+    color: #124265;
+    min-height: 100vh;
 }
 
 section {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding-top: 72px;
 }
 
@@ -105,16 +112,16 @@ section {
 #title button {
     width: 192px;
     height: 56px;
-    background-color: rgb(36, 180, 224);
+    background-color: #2487ce;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     margin-top: 24px;
     font-size: 14pt;
     color: white;
 }
 
 #title button:hover {
-    background-color: rgb(44, 188, 232);
+    background-color: #2690db;
     cursor: pointer;
 }
 
@@ -145,4 +152,154 @@ section {
 
 #blocks > div > img {
     height: 32px;
+}
+
+#aboutUs {
+    text-align: center;
+    padding: 80px 0;
+}
+
+#aboutUs h1 {
+    font-size: 20pt;
+}
+
+#aboutUs > p {
+    color: gray;
+    margin-bottom: 24px;
+}
+
+#aboutUsContainer {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.aboutUsContainerBlock {
+    width: 50%;
+    /* height: 100px; */
+    text-align: left;
+    padding: 16px;
+}
+
+.aboutUsContainerBlock li {
+    margin: 16px 0px;
+}
+
+.aboutUsContainerBlock button {
+    width: 140px;
+    height: 40px;
+    background-color: white;
+    border: 2px solid #2487ce;
+    border-radius: 5px;
+    margin-top: 24px;
+    font-size: 12pt;
+    color: #2487ce;
+}
+
+.aboutUsContainerBlock button:hover {
+    background-color: #2690db;
+    cursor: pointer;
+    color: white;
+}
+
+#counts {
+    padding: 0;
+    height: 200px;
+    background-color: #f8fbfe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#counts div {
+    width: 20%;
+}
+
+#counts h1 {
+    font-size: 32pt;
+    margin: 0;
+    color: #16507b;
+}
+
+#counts p {
+    color: #1f6da8;
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+#woman {
+    padding: 80px 0;
+}
+
+#woman > div {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+#woman > div > div {
+    /* height: 500px; */
+    width: 45%;
+    padding: 0px 16px;
+}
+
+#woman img {
+    width: 100%;
+}
+
+#woman h1 {
+    margin: 0;
+}
+
+#woman li {
+    margin: 16px 0;
+}
+
+#clients {
+    padding: 0;
+    height: 128px;
+    background-color: #f8fbfe;
+}
+
+#clients > div {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+#clients img {
+    height: 40px;
+    filter: grayscale(100);
+    transition: all 500ms ease-in-out;
+    /* transition: filter 500ms ease-in-out; */
+}
+
+#clients img:hover {
+    transform: scale(1.2);
+    filter: none;
+}
+
+@keyframes clientDesaturation {
+    0% {
+
+    }
+
+    100% {
+
+    }
+}
+
+@keyframes clientSaturation {
+    0% {
+
+    }
+
+    100% {
+        transform: scale(1.2);
+        filter: none;
+    }
 }
