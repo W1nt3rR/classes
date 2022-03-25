@@ -56,6 +56,7 @@ nav button {
     border-radius: 4px;
     font-size: 12pt;
     color: white;
+    transition: all 0.3s ease-in-out;
 }
 
 nav button:hover {
@@ -84,7 +85,7 @@ nav select {
 
 section {
     /* min-height: 100vh; */
-    padding-top: 72px;
+    padding: 80px 0;
 }
 
 #title {
@@ -101,7 +102,7 @@ section {
 }
 
 #title h1 {
-    font-size: 56pt;
+    font-size: 52pt;
 }
 
 #title p {
@@ -118,6 +119,7 @@ section {
     margin-top: 24px;
     font-size: 14pt;
     color: white;
+    transition: all 0.3s ease-in-out;
 }
 
 #title button:hover {
@@ -194,6 +196,7 @@ section {
     margin-top: 24px;
     font-size: 12pt;
     color: #2487ce;
+    transition: all 0.3s ease-in-out;
 }
 
 .aboutUsContainerBlock button:hover {
@@ -283,23 +286,164 @@ section {
     filter: none;
 }
 
-@keyframes clientDesaturation {
-    0% {
-
-    }
-
-    100% {
-
-    }
+#testemonials {
+    text-align: center;
+    padding: 80px 0;
 }
 
-@keyframes clientSaturation {
-    0% {
+#testemonials h1 {
+    font-size: 20pt;
+}
 
-    }
+#testemonials > p {
+    color: gray;
+    margin-bottom: 24px;
+}
 
-    100% {
-        transform: scale(1.2);
-        filter: none;
-    }
+#testemonialsContainer {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.testemonialsContainerBlock {
+    width: 30%;
+    /*height: 100px;*/
+    text-align: center;
+    /*background-color: #124265;*/
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.testemonialsContainerBlock p {
+    background-color: #f3f9fd;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.testemonialsContainerBlock h3 {
+    margin: 0;
+}
+
+.testemonialsContainerBlock h4 {
+    color: gray;
+    margin: 0;
+}
+
+.testemonialsContainerBlock img {
+    margin-top: 24px;
+    width: 90px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+#services {
+    background-color: #f8fbfe;
+    text-align: center;
+    padding: 80px 0;
+}
+
+#servicesContainer {
+    width: 80%;
+    margin: auto;
+}
+
+#servicesContainer > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.servicesBlock {
+    /*display: flex;
+    justify-content: center;
+    align-items: center; */
+    flex-wrap: wrap;
+    width: 30%;
+    margin: 1%;
+    /*height: 35vh;*/
+    box-sizing: border-box;
+    padding: 72px 16px;
+    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.05);
+    background-color: white;
+}
+
+.servicesBlock img {
+    width: 36px;
+    margin: auto;
+}
+
+#servicesContainer > p {
+    color: gray;
+    margin-bottom: 32px;
+}
+
+#callToAction {
+    text-align: center;
+    font-size: 16pt;
+    background-color: #2487ce;
+    color: white;
+    padding: 60px 0;
+}
+
+#callToAction > div{
+    width: 80%;
+    margin: auto;
+}
+
+#callToAction button {
+    width: 192px;
+    height: 48px;
+    background-color: #2487ce;
+    border: 3px solid white;
+    border-radius: 5px;
+    margin-top: 24px;
+    font-size: 14pt;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+#callToAction button:hover {
+    background-color: white;
+    cursor: pointer;
+    color: #2690db;
+}
+
+#portfolio {
+    background-color: #f8fbfe;
+    text-align: center;
+}
+
+#portfolio > div {
+    width: 80%;
+    margin: auto;
+}
+
+#portfolioBlockContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolioBlock{
+    background-color: white;
+    width: 22%;
+    margin: 1%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
+    padding-bottom: 24px;
+    box-sizing: border-box;
+}
+
+.portfolioBlock h3 {
+    color: #124265;
+}
+
+.portfolioBlock p {
+    color: gray;
+    font-size: 10pt;
+}
+
+.portfolioBlock img{
+    width: 100%;
 }
