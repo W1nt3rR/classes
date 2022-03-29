@@ -64,20 +64,11 @@ nav a:hover {
     color: #2487ce;
 }
 
-nav button {
+#buttonNav {
     width: 128px;
     height: 40px;
-    background-color: #2487ce;
-    border: none;
-    border-radius: 4px;
     font-size: 12pt;
-    color: white;
-    transition: all 0.3s ease-in-out;
-}
-
-nav button:hover {
-    background-color: #2690db;
-    cursor: pointer;
+    margin: 0;
 }
 
 nav select {
@@ -126,21 +117,11 @@ section {
     margin-top: 8px;
 }
 
-#title button {
+#buttonTitle {
     width: 192px;
     height: 56px;
-    background-color: #2487ce;
-    border: none;
-    border-radius: 5px;
-    margin-top: 24px;
+    /*margin-top: 24px;*/
     font-size: 14pt;
-    color: white;
-    transition: all 0.3s ease-in-out;
-}
-
-#title button:hover {
-    background-color: #2690db;
-    cursor: pointer;
 }
 
 #blocks {
@@ -206,19 +187,7 @@ section {
 .aboutUsContainerBlock button {
     width: 140px;
     height: 40px;
-    background-color: white;
-    border: 2px solid #2487ce;
-    border-radius: 5px;
-    margin-top: 24px;
     font-size: 12pt;
-    color: #2487ce;
-    transition: all 0.3s ease-in-out;
-}
-
-.aboutUsContainerBlock button:hover {
-    background-color: #2690db;
-    cursor: pointer;
-    color: white;
 }
 
 #counts {
@@ -411,38 +380,26 @@ section {
 #callToAction button {
     width: 192px;
     height: 48px;
-    background-color: #2487ce;
-    border: 3px solid white;
-    border-radius: 5px;
-    margin-top: 24px;
     font-size: 14pt;
-    color: white;
-    transition: all 0.3s ease-in-out;
 }
 
-#callToAction button:hover {
-    background-color: white;
-    cursor: pointer;
-    color: #2690db;
-}
-
-#portfolio {
+#team {
     background-color: #f8fbfe;
     text-align: center;
 }
 
-#portfolio > div {
+#team > div {
     width: 80%;
     margin: auto;
 }
 
-#portfolioBlockContainer {
+#teamBlockContainer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.portfolioBlock{
+.teamBlock{
     background-color: white;
     width: 22%;
     margin: 1%;
@@ -451,15 +408,108 @@ section {
     box-sizing: border-box;
 }
 
-.portfolioBlock h3 {
+.teamBlock h3 {
     color: #124265;
 }
 
-.portfolioBlock p {
+.teamBlock p {
     color: gray;
     font-size: 10pt;
 }
 
-.portfolioBlock img{
+.teamBlock img{
     width: 100%;
+}
+
+#pricing {
+    background-color: #f8fbfe;
+    text-align: center;
+}
+
+#pricing > div {
+    width: 80%;
+    margin: auto;
+}
+
+#pricingBlockContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pricingBlock{
+    background-color: white;
+    width: 30%;
+    margin: 1%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
+    padding: 48px 24px;
+    box-sizing: border-box;
+}
+
+#pricing ul {
+    margin: 0;
+    padding: 0;
+}
+
+#pricing li {
+    list-style: none;
+    padding-bottom: 16px;
+}
+
+#pricing span {
+    color: gray;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.featured {
+    color: white;
+    background-color: #2487ce;
+}
+
+.strike {
+    color: gray;
+    text-decoration: line-through;
+}
+
+/* Buttons CSS */
+.buttonCommon {
+    transition: all 0.3s ease-in-out;
+    border-radius: 4px;
+    margin-top: 24px;
+    font-size: 12pt;
+    width: 140px;
+    height: 40px;
+}
+.buttonCommon:hover {
+    cursor: pointer;
+}
+
+.buttonWhite {
+    background-color: white;
+    border: 3px solid #2487ce;
+    color: #2487ce;
+}
+.buttonWhite:hover {
+    background-color: #2690db;
+    color: white;
+}
+
+.buttonBlue {
+    background-color: #2487ce;
+    border: 3px solid white;
+    color: white;
+}
+.buttonBlue:hover {
+    background-color: white;
+    color: #2690db;
+}
+
+.buttonSolidBlue {
+    background-color: #2487ce;
+    border: none;
+    color: white;
+}
+.buttonSolidBlue:hover {
+    background-color: #2690db;
 }
