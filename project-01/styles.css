@@ -2,22 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-div {
-    animation: fade-in 1s normal;
-}
-
-@keyframes fade-in {
-    0% {
-        /* transform: scale(0.5); */
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-        /* transform: scale(1); */
-    }
-}
-
 body {
     margin: 0;
     /* width: 90%; */
@@ -299,12 +283,14 @@ section {
     /*background-color: #124265;*/
     padding: 24px;
     box-sizing: border-box;
+    /*border-radius: 6px;*/
 }
 
 .testemonialsContainerBlock p {
     background-color: #f3f9fd;
     padding: 24px;
     margin-bottom: 24px;
+    border-radius: 6px;
 }
 
 .testemonialsContainerBlock h3 {
@@ -406,6 +392,8 @@ section {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
     padding-bottom: 24px;
     box-sizing: border-box;
+    border-radius: 4px;
+    overflow: hidden;
 }
 
 .teamBlock h3 {
@@ -422,7 +410,7 @@ section {
 }
 
 #pricing {
-    background-color: #f8fbfe;
+    /*background-color: #f8fbfe;*/
     text-align: center;
 }
 
@@ -444,6 +432,7 @@ section {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
     padding: 48px 24px;
     box-sizing: border-box;
+    border-radius: 8px;
 }
 
 #pricing ul {
@@ -471,6 +460,18 @@ section {
     color: gray;
     text-decoration: line-through;
 }
+
+#faq {
+    background-color: #f8fbfe;
+    text-align: center;
+}
+
+#faq > div{
+    width: 80%;
+    margin: auto;
+}
+
+
 
 /* Buttons CSS */
 .buttonCommon {
