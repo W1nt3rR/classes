@@ -12,13 +12,15 @@ body {
 #content {
     width: 100%;
     margin: auto;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 nav {
     height: 72px;
+    width: 100%;
     display: flex;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
-    position: sticky;
+    position: fixed;
     top: 0;
     background-color: white;
     /* color: rgb(112, 255, 255); */
@@ -117,11 +119,11 @@ section {
 
 #blocks > div {
     /* box-shadow: ; */
-    /* width: 20%; */
-    flex-grow: 1;
+    width: 20%;
+    /* flex-grow: 1; */
     /* height: 36vh; */
     box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.05);
-    margin: 0px 20px;
+    margin: 16px 16px;
     background-color: white;
     transition: 0.5s;
     box-sizing: border-box;
@@ -326,8 +328,8 @@ section {
     justify-content: center;
     align-items: center; */
     flex-wrap: wrap;
-    width: 30%;
-    margin: 1%;
+    width: 28%;
+    margin: 16px;
     /*height: 35vh;*/
     box-sizing: border-box;
     padding: 72px 16px;
@@ -485,6 +487,18 @@ section {
     margin: auto;
 }
 
+#contactContainer {
+    display: flex;
+}
+
+#contactBlock1 {
+    width: 35%;
+}
+
+#contactBlock2 {
+    width: 65%;
+}
+
 #map {
     width: 100%;
     height: 384px;
@@ -555,16 +569,21 @@ section {
     background-color: #f8fbfe;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
     padding: 0;
+    color: gray;
+}
+
+#footer h4{
+    color: #124265;
 }
 
 #footer > div {
-    width: 80%;
-    margin: auto;
     background-color: white;
 }
 
 #footer-top {
     display: flex;
+    padding: 32px 10%;
+    box-sizing: border-box;
 }
 
 #footer-top form{
@@ -587,8 +606,10 @@ section {
 }
 
 #footer-bottom {
-    padding: 32px 0px;
+    padding: 32px 10%;
     display: flex;
+    box-sizing: border-box;
+    background-color: #f8fbfe;
 }
 
 #footer-bottom a{
@@ -612,6 +633,22 @@ section {
     margin: 0;
     padding: 0;
     border-radius: 0 4px 4px 0;
+}
+
+#footerBlock1 {
+    width: 27.5%;
+}
+
+#footerBlock2 {
+    width: 17.5%;
+}
+
+#footerBlock3 {
+    width: 25%;
+}
+
+#footerBlock4 {
+    width: 30%;
 }
 
 #backToTop {
@@ -689,4 +726,90 @@ section {
 }
 .buttonSolidBlue:hover {
     background-color: #2690db;
+}
+
+@media screen and (max-width: 1000px) {
+    #title h1 {
+        font-size: 28pt;
+    }
+    
+    #blocks {
+        flex-wrap: wrap;
+    }
+    
+    #blocks > div {
+        width: 40%;
+        /* flex-wrap: wrap; */
+    }
+
+    #aboutUsContainer {
+        flex-wrap: wrap;
+    }
+    
+    .aboutUsContainerBlock {
+        width: 100%;
+    }
+    #woman > div {
+        flex-wrap: wrap;
+    }
+    
+    #woman > div > div {
+        width: 100%;
+    }
+
+    #clients > div {
+        flex-wrap: wrap;
+    }
+
+    #clients > div > div {
+        width: 30%;
+    }
+
+    #testemonialsContainer {
+        flex-wrap: wrap;
+    }
+    
+    .testemonialsContainerBlock {
+        width: 100%
+    }
+
+    #servicesContainer > div {
+        flex-wrap: wrap;
+    }
+    
+    .servicesBlock {
+        width: 45%
+    }
+
+    #teamBlockContainer {
+        flex-wrap: wrap;
+    }
+    
+    .teamBlock{
+        width: 45%;
+    }
+
+    #pricingBlockContainer {
+        flex-wrap: wrap;
+    }
+    
+    .pricingBlock{
+        width: 45%;
+    }
+
+    #contactContainer {
+        flex-wrap: wrap;
+    }
+
+    #contactContainer > div{
+        width: 100%;
+    }
+
+    #footer-top {
+        flex-wrap: wrap;
+    }
+
+    #footer-top > div {
+        width: 45%;
+    }
 }

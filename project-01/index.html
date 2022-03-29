@@ -11,28 +11,7 @@
     
 </head>
 <body data-aos-easing="ease-in-out" data-aos-duration="1000">
-    <nav>
-        <div>
-            <p>OnePage</p>
-            <div class="filler"></div>
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Services</a>
-            <a href="">Portfolio</a>
-            <a href="">Team</a>
-            <a href="">Pricing</a>
-            <label for="drop-down"></label>
-            <select name="drop-down" id="">
-                <option value="">Drop Down 1</option>
-                <option value="">Drop Down 2</option>
-                <option value="">Drop Down 3</option>
-                <option value="">Drop Down 4</option>
-                <option value="">Drop Down 5</option>
-            </select>
-            <a href="">Contact</a>
-            <button id="buttonNav" class="buttonCommon buttonSolidBlue">Get Started</button>
-        </div>
-    </nav>
+    
 
     <div id="content">
         <section id="home">
@@ -236,7 +215,7 @@
 
         <section id="team">
             <div data-aos="fade-up">
-                <h1>TEAM</h1>
+                <h1 class="sectionTitle">TEAM</h1>
                 <p class="sectionDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. In autem dolores, quae itaque ea voluptas deleniti, veniam rem, corrupti ducimus nulla voluptates eius explicabo cumque cupiditate distinctio reiciendis nemo molestiae.</p>
                 <div id="teamBlockContainer">
                     <div class="teamBlock" data-aos="fade-up" data-aos-delay="100">
@@ -265,7 +244,7 @@
 
         <section id="pricing">
             <div data-aos="fade-up">
-                <h1>PRICING</h1>
+                <h1 class="sectionTitle">PRICING</h1>
                 <p class="sectionDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. In autem dolores, quae itaque ea voluptas deleniti, veniam rem, corrupti ducimus nulla voluptates eius explicabo cumque cupiditate distinctio reiciendis nemo molestiae.</p>
                 <div id="pricingBlockContainer">
                     <div class="pricingBlock" data-aos="zoom-in" data-aos-delay="100">
@@ -310,7 +289,7 @@
 
         <section id="faq">
             <div data-aos="fade-up">
-                <h1>FREQUENTLY ASKED QUESTIONS</h1>
+                <h1 class="sectionTitle">FREQUENTLY ASKED QUESTIONS</h1>
                 <p class="sectionDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. In autem dolores, quae itaque ea voluptas deleniti, veniam rem, corrupti ducimus nulla voluptates eius explicabo cumque cupiditate distinctio reiciendis nemo molestiae.</p>
                 <div>
                     <ul>
@@ -327,13 +306,13 @@
 
         <section id="contact">
             <div data-aos="fade-up">
-                <h1>CONTACT</h1>
+                <h1 class="sectionTitle">CONTACT</h1>
                 <p class="sectionDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. In autem dolores, quae itaque ea voluptas deleniti, veniam rem, corrupti ducimus nulla voluptates eius explicabo cumque cupiditate distinctio reiciendis nemo molestiae.</p>
                 <div id="map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d612.0119856133645!2d20.516093129206244!3d43.14157265071156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475629e77c95af61%3A0xc9dc6e9c50278056!2sRegionalni%20inovacioni%20startap%20centar%20Novi%20Pazar!5e0!3m2!1sen!2srs!4v1648552730996!5m2!1sen!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div style="display: flex;">
-                    <div style="width: 35%;">
+                <div id="contactContainer" style="display: flex;">
+                    <div id="contactBlock1" style="width: 35%;">
                         <div class="contactInfo">
                             <img src="images/icons/instagram.svg" alt="">
                             <div>
@@ -357,7 +336,7 @@
                         </div>
                     </div>
 
-                    <div id="contactForm" style="width: 65%;">
+                    <div id="contactForm" id="contactBlock2">
                         <form action="">
                             <input placeholder="Your Name" class="contactFormCommon contactHalf" type="Text">
                             <input placeholder="Email" class="contactFormCommon contactHalf" type="Email" name="" id="">
@@ -377,7 +356,7 @@
     <section id="footer">
         <div>
             <div id="footer-top">
-                <div style="width: 27.5%;">
+                <div id="footerBlock1">
                     <h3>OnePage</h3>
                     <p>
                         A108 Adam Street <br>
@@ -388,7 +367,7 @@
                     
                     </p>
                 </div>
-                <div style="width: 17.5%;">
+                <div id="footerBlock2">
                     <h4>Useful Links</h4>
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -399,7 +378,7 @@
                     </ul>
 
                 </div>
-                <div style="width: 25%;">
+                <div id="footerBlock3">
                     <h4>Useful Links</h4>
                     <ul>
                         <li><a href="#">Web Design</a></li>
@@ -409,7 +388,7 @@
                         <li><a href="#">Grraphic Design</a></li>
                     </ul>
                 </div>
-                <div style="width: 30%;">
+                <div id="footerBlock4">
                     <h4>Join Our Newsletter</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat dolor eum nostrum doloribus.</p>
                     <form action="">
@@ -434,6 +413,29 @@
             </div>
         </div>
     </section>
+
+    <nav>
+        <div>
+            <p>OnePage</p>
+            <div class="filler"></div>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Portfolio</a>
+            <a href="">Team</a>
+            <a href="">Pricing</a>
+            <label for="drop-down"></label>
+            <select name="drop-down" id="">
+                <option value="">Drop Down 1</option>
+                <option value="">Drop Down 2</option>
+                <option value="">Drop Down 3</option>
+                <option value="">Drop Down 4</option>
+                <option value="">Drop Down 5</option>
+            </select>
+            <a href="">Contact</a>
+            <button id="buttonNav" class="buttonCommon buttonSolidBlue">Get Started</button>
+        </div>
+    </nav>
 
     <a id="backToTop" class="aButton" href="#"><img src="images/icons/arrow-up.png" alt=""></a>
 
