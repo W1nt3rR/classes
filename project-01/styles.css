@@ -146,11 +146,6 @@ section {
     font-size: 20pt;
 }
 
-#aboutUs > p {
-    color: gray;
-    margin-bottom: 24px;
-}
-
 #aboutUsContainer {
     display: flex;
     width: 80%;
@@ -260,13 +255,13 @@ section {
     padding: 80px 0;
 }
 
-#testemonials h1 {
-    font-size: 20pt;
+#testemonials div{
+    width: 80%;
+    margin: auto;
 }
 
-#testemonials > p {
-    color: gray;
-    margin-bottom: 24px;
+#testemonials h1 {
+    font-size: 20pt;
 }
 
 #testemonialsContainer {
@@ -345,11 +340,6 @@ section {
     margin: auto;
 }
 
-#servicesContainer > p {
-    color: gray;
-    margin-bottom: 32px;
-}
-
 #callToAction {
     text-align: center;
     font-size: 16pt;
@@ -368,6 +358,17 @@ section {
     height: 48px;
     font-size: 14pt;
 }
+
+#portfolio {
+    background-color: #f8fbfe;
+    text-align: center;
+}
+
+#portfolio > div {
+    width: 80%;
+    margin: auto;
+}
+
 
 #team {
     background-color: #f8fbfe;
@@ -471,7 +472,182 @@ section {
     margin: auto;
 }
 
+#contact {
+    background-color: none;
+}
 
+#contact {
+    text-align: center;
+}
+
+#contact > div{
+    width: 80%;
+    margin: auto;
+}
+
+#map {
+    width: 100%;
+    height: 384px;
+    margin-bottom: 48px;
+}
+
+#map iframe{
+    width: 100%;
+    height: 384px;
+}
+
+.contactInfo {
+    display: flex;
+    margin-bottom: 32px;
+    text-align: left;
+}
+
+.contactInfo img{
+    height: 52px;
+    background-color: #f8fbfe;
+}
+
+.contactInfo div{
+    flex-grow: 1;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.contactInfo h3, p{
+    margin: 0;
+    padding: 0;
+}
+
+#contactForm form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#contactForm div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contactFormCommon {
+    box-sizing: border-box;
+    padding: 4px 8px;
+    margin-bottom: 16px;
+    height: 48px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+.contactHalf {
+    width: 49%; 
+}
+
+.contactFull {
+    width: 100%;
+}
+
+#contactTextArea {
+    height: 128px;
+}
+
+#footer {
+    background-color: #f8fbfe;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
+    padding: 0;
+}
+
+#footer > div {
+    width: 80%;
+    margin: auto;
+}
+
+#footer-top {
+    background-color: white;
+    display: flex;
+}
+
+#footer-top form{
+    display: flex;
+    margin-top: 32px;
+}
+
+#footer-top li{
+    margin-top: 20px;
+}
+
+#footer-top a{
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+    transition: all 0.3s ease-in-out;
+}
+
+#footer-top a:hover{
+    color: #2487ce;
+}
+
+#footer-bottom {
+    padding: 32px 0px;
+    display: flex;
+}
+
+#footer-bottom a{
+    text-decoration: none;
+    color: #2487ce;
+}
+
+#footerEmailBox {
+    width: calc(100% - 140px);
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    border-radius: 4px 0 0 4px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+#footerSubmit {
+    width: 128px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0 4px 4px 0;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+}
+
+.aButton {
+    width: 40px;
+    height: 40px;
+    background-color: #2487ce;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 8px;
+    margin: 0 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+.aButton:hover {
+    background-color: #2690db;
+}
+
+.aButton img {
+    width: 100%;
+    height: 100%;
+}
+
+.sectionDesc{
+    color: gray;
+    margin-bottom: 32px;
+}
+
+.sectionTitle {
+    color: #124265;
+}
 
 /* Buttons CSS */
 .buttonCommon {
