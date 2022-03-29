@@ -371,6 +371,15 @@ section {
     margin: auto;
 }
 
+#portfolioImages{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#portfolioImages img{
+    width: 30%;
+    margin: 16px;
+}
 
 #team {
     background-color: #f8fbfe;
@@ -474,6 +483,20 @@ section {
     margin: auto;
 }
 
+#faq ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#faq li {
+    width: 80%;
+    height: 64px;
+    background-color: white;
+    text-align: left;
+}
+
 #contact {
     background-color: none;
 }
@@ -518,7 +541,10 @@ section {
 
 .contactInfo img{
     height: 52px;
-    background-color: #f8fbfe;
+    background-color: #a2d1ff;
+    border-radius: 8px;
+    padding: 12px;
+    box-sizing: border-box;
 }
 
 .contactInfo div{
@@ -530,6 +556,7 @@ section {
 .contactInfo h3, p{
     margin: 0;
     padding: 0;
+    color: #124265;
 }
 
 #contactForm form{
