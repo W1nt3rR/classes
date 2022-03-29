@@ -560,10 +560,10 @@ section {
 #footer > div {
     width: 80%;
     margin: auto;
+    background-color: white;
 }
 
 #footer-top {
-    background-color: white;
     display: flex;
 }
 
