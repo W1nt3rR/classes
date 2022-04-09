@@ -1,4 +1,4 @@
-var array = [1, 21, 5, 6, 9, 69];
+var array = [1, 21, 5, 6, 9, 69, 25];
 
 array.push(45);
 
