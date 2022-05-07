@@ -1,0 +1,14 @@
+{
+  "name": "name1",
+  "version": "1.0.0",
+  "description": "idk",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "git-push": "git add . && git commit -m 'automated' && git push "
+  },
+  "author": "ramiz",
+  "license": "ISC"
+}
