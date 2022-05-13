@@ -55,7 +55,8 @@ console.log("main funkcija");
 */
 
 /*
-// lose
+
+// bad to use
 promise.then(() => {
     new Promise().then(() => {
         new Promise().then((value) => value);
