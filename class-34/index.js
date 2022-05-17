@@ -19,14 +19,16 @@ const randomQuoteFromAuthor = async (name) => {
     }
 };
 
-const returnQuotes = async (page, sortBy) => {
+const returnQuotes = async (page, sortBy, order) => {
     try {
-        const paramsExist = page || sortBy;
+        const paramsExist = page || sortBy || order;
         const moreThan2 = page && sortBy;
         const response = await fetch(`https://api.quotable.io/quotes
             ${paramsExist ? "?" : ""}
             ${page ? `page=${page}` : ""}
-            ${sortBy ? `${}sortBy=${sortBy}` : ""}`);
+            ${page || sortBy ? "&" : ""}
+            ${sortBy ? `sortBy=${sortBy}` : ""}
+            ${order ? `order=${order}` : ""}`);
         const result = await response.json();
 
         // console.log(result.results[0].content);
@@ -67,6 +69,6 @@ const authorCheck = async (author) => {
 
 // returnQuotes();
 
-returnQuotes(5, "content").then(value => value.forEach(element => { 
+returnQuotes(5, "content", "desc").then(value => value.forEach(element => { 
     console.log(element.content + " by: " + element.author + "\n"); 
 }));
